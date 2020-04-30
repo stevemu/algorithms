@@ -1,0 +1,27 @@
+functional programming: clsoure, curry
+thunk
+
+what clsoure can do, class cannot do
+lexical clsoure vs others
+
+// closure example
+// execution context
+myGetContent = GetContent(username, password)
+content1 = myContent.getContent(url);
+content2 = myContent.getContent(url2);
+yourContent = GetContent(yourname, password);
+
+code/pattern/api/language feature:
+what it is 
+when to use it (more important)
+
+
+do research:
+
+difference between arrow function and normal function
+
+
+
+closure:
+
+https://medium.com/coderbyte/a-tricky-javascript-interview-question-asked-by-google-and-amazon-48d212890703

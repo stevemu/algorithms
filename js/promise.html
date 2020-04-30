@@ -1,0 +1,34 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        // fetch('http2222s://jsonplaceholder.typicode.com/todos/1').then((res) => {
+        //     return res.json();
+        // }).then((json) => {
+        //     console.log(json);
+        //     // let myVar = json;
+        //     // let jsonStr = JSON.stringify(json);
+        //     // localStorage.setItem("test", jsonStr);
+
+        // }).catch((err) => {
+        //     console.log('catch here');
+        //     console.error(err);
+        // })
+
+        async function run() {
+            let res = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+            console.log(res);
+            let json = res.json();
+            console.log(json);
+        }
+
+        run();
+
+    </script>
+</body>
+
+</html>

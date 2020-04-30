@@ -1,0 +1,2 @@
+Jay:
+curry & closure has their use 

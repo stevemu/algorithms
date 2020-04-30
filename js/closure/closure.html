@@ -1,0 +1,55 @@
+<html>
+
+<head></head>
+
+<body>
+
+    <div id="counter"></div>
+    <button id="+">+</button>
+    <button id="-">-</button>
+
+    <script>
+
+        // const add = (function () {
+        //     let counter = 0;
+
+        //     return () => {
+        //         counter++;
+        //         return counter;
+        //     }
+        // })()
+
+        // const addTodo = (() => {
+        //     let todos = [];
+
+        //     return (todo) => {
+        //         todos = [...todos, todo];
+        //         return todos;
+        //     }
+        // })();
+
+        const changeCounter = (() => {
+            let counter = 0;
+
+            return (isAdd = true) => {
+                if (isAdd) {
+                    return counter++;
+                } else {
+                    return counter--;
+                }
+            }
+        })();
+
+        document.getElementById("+").addEventListener("click", () => {
+            console.log(changeCounter(true));
+        })
+
+        document.getElementById("-").addEventListener("click", () => {
+            console.log(changeCounter(false));
+        })
+
+
+    </script>
+</body>
+
+</html>

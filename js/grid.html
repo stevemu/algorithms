@@ -1,0 +1,46 @@
+<html>
+
+<head>
+
+    <style>
+        #container {
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "left main right"
+        }
+
+        #header {
+            grid-area: header;
+            background-color: yellow;
+        }
+
+        #left {
+            grid-area: left;
+            background-color: red;
+        }
+
+        #main {
+            grid-area: main;
+            background-color: black;
+        }
+
+        #right {
+            grid-area: right;
+            background-color: royalblue;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">header</header>
+        <div id="left">left side bar</div>
+        <div id="main">main content</div>
+        <div id="right">right side bar</div>
+    </div>
+
+</body>
+
+</html>

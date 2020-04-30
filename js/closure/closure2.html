@@ -1,0 +1,69 @@
+<html>
+
+<head></head>
+
+<body>
+
+    <button id="add">+</button>
+    <button id="remove">-</button>
+
+    <script>
+        
+        // let changeCounter = (() => {
+        //     let counter = 0;
+
+        //     return () => {
+                
+        //     }
+
+        // })()
+
+
+        function changeCounter() {
+            let counter = 0;
+            let add = function() {
+                return ++counter;
+            }
+            let del = function() {
+                return --counter;
+            }
+            return {
+                add,
+                del
+            }
+            
+        }
+
+        // function add() {
+        //     let test = 0;
+        //     return function add1() {
+        //         return function add2() {
+        //             return function add3() {
+        //                 return ++test;
+        //             }
+        //         }
+        //     }
+        // }
+
+        // function add() {
+        //     let counter = 0;
+        //     return ++counter;
+        // }
+
+        // let result = add()()()();
+        // console.log(result);
+
+        let {add, del} = changeCounter();
+
+        document.getElementById("add").addEventListener("click", () => {
+            console.log(add());
+        })
+
+        document.getElementById("remove").addEventListener("click", () => {
+            console.log(del());
+        })
+
+    </script>
+</body>
+
+</html>
